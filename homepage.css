@@ -37,10 +37,11 @@
 .nav-a:hover {
   color: lightcoral;
 }
+.nav-a:active {
+  color: burlywood;
+}
 .image {
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
   margin-top: 50px;
 }
 .container {
@@ -65,6 +66,9 @@
 .label {
   margin: 10px;
   width: 200px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
 }
 
 .input {
@@ -79,11 +83,13 @@
   margin: 10px;
   width: 300px;
   padding: 5px;
-  background-color: #007bff;
+  background-color: #194676;
   color: #fff;
   border: none;
   border-radius: 3px;
   cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
 }
 .media-links {
   display: flex;
@@ -93,12 +99,13 @@
   justify-content: center;
   padding: 10px;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .media-a {
   border-radius: 50%;
   text-decoration: none;
-  color: lightcoral;
+  color: rgb(160, 55, 55);
   margin: 20px;
 }
 .toggle-container {
@@ -110,12 +117,15 @@
   padding: 0.7rem;
   font-size: large;
   border-radius: 7px;
+  cursor: pointer;
 }
 .project-a {
   display: flex;
   flex-direction: row;
+  text-align: center;
   text-decoration: underline;
-  color: lightcoral;
+  font-weight: bolder;
+  color: rgb(160, 55, 55);
 }
 .project {
   list-style-type: none;
@@ -127,19 +137,30 @@
   .nav-a {
     padding: 5px;
     font-size: 18px;
+    margin: 60px;
   }
-  h1 {
+  .h1 {
     font-size: 30px;
   }
-  h2 {
-    font-size: 15px;
+  .h2 {
+    font-size: 20px;
     text-align: center;
+    padding: 5px;
   }
   .container {
-    margin: 10px;
+    margin: 0px 10px;
+    padding-top: 120px;
+  }
+  .theme-toggle {
+    padding: 0.4rem;
+    font-size: large;
+    border-radius: 4px;
+  }
+  .body {
+    font-size: 15px;
   }
 }
-@media (min-width: 576px) and (max-width: 780px) {
+@media (min-width: 576px) and (max-width: 975px) {
   .nav-a {
     font-size: 20px;
   }
@@ -147,7 +168,7 @@
     padding: 50px;
     margin: 20px;
   }
-  h2 {
+  .h2 {
     font-size: 25px;
     text-align: center;
   }

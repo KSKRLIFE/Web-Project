@@ -14,3 +14,23 @@ themeToggleBtn.addEventListener("click", () => {
     themeToggleBtn.style.color = "black";
   }
 });
+const formSubmitBtn = document.getElementById("form-submit");
+let form = document.querySelector("form");
+formSubmitBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  if (
+    form.elements.name.value === "" &&
+    form.elements.email.value === "" &&
+    form.elements.message.value === ""
+  ) {
+    alert("Name, Email and Message are required to submit the form.");
+  } else if (form.elements.email.value === "") {
+    alert("Email is required to submit the form");
+  } else if (form.elements.message.value === "") {
+    alert("Message is required to submit the form");
+  } else {
+    alert(
+      "Thanks for visiting the website. Contacting through this form is not yet implemented. Please use one of the Social media links provided below the form to contact me."
+    );
+  }
+});
